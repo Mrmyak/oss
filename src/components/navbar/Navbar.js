@@ -1,5 +1,8 @@
 import "./Navbar.css";
 import Search from '@mui/icons-material/Search';
+import Login from "../../pages/login";
+import { Link } from "react-router-dom";
+
 
 export default function Navbar() {
     return (
@@ -18,8 +21,10 @@ export default function Navbar() {
             <div className="topbarRight">
 
 
-                <span className="topbarLink">LOGIN</span>
+            <Link to="/login"><span className="topbarLink" onClick={() => <Login />}>LOGIN</span>
+</Link>
             </div>
         </div>
+        
     );
 }
