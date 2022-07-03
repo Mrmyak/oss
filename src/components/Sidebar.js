@@ -13,10 +13,10 @@ import { Link } from "react-router-dom";
 function Sidebar() {
     return (
         <div className="sidebar">
-            <img src={logo} className="logo_icon" />
+            <img src={logo} alt="" className="logo_icon" />
             <Link to="/" style={{ textDecoration: 'none' }}> <SidebarOption active Icon={HomeIcon} text="Home" /> </Link>
             <SidebarOption Icon={SearchIcon} text="Explore" />
-            <SidebarOption Icon={MailOutlineIcon} text="Messages" />
+            <Link to="/notice"><SidebarOption Icon={MailOutlineIcon} text="Notices" /></Link>
             <SidebarOption Icon={ListAltIcon} text="Courses" />
             <SidebarOption Icon={PermIdentityIcon} text="Profile" />
             <SidebarOption Icon={MoreHorizIcon} text="More" />
