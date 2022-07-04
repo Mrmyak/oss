@@ -11,18 +11,13 @@ const Notice = () => {
         
       }
     }).then((res)=>{
-      console.log(res.data);
+      console.log(res.data.notices);
     })
 
   return (
     <div>
-    <h1>Notices </h1>
-    <h1>Notices </h1>
-    <h1>Notices </h1>
-    <h1>Notices </h1>
-    <h1>Notices </h1>
-    <h1>Notices </h1>
-    <h1>Notices </h1></div>
+    <h1>Notice</h1>
+    </div>
   )
 }
 

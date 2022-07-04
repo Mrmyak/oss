@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import "./login.css";
 import Axios from "axios";
 
 const Login = () => {
   const [Email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [serverMessage, setServerMessage] = useState("");
+  // const [serverMessage, setServerMessage] = useState("");
 
   const data={
     "email":Email,

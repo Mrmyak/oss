@@ -17,7 +17,9 @@ function Sidebar() {
             <Link to="/" style={{ textDecoration: 'none' }}> <SidebarOption active Icon={HomeIcon} text="Home" /> </Link>
             <SidebarOption Icon={SearchIcon} text="Explore" />
             <Link to="/notice"><SidebarOption Icon={MailOutlineIcon} text="Notices" /></Link>
-            <SidebarOption Icon={ListAltIcon} text="Courses" />
+            <Link to="/courses"> <SidebarOption Icon={ListAltIcon} text="Courses" /></Link>
+            <Link to="/schedule"> <SidebarOption Icon={ListAltIcon} text="Schedule" /></Link>
+
             <SidebarOption Icon={PermIdentityIcon} text="Profile" />
             <SidebarOption Icon={MoreHorizIcon} text="More" />
 
