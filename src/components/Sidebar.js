@@ -15,13 +15,15 @@ function Sidebar() {
         <div className="sidebar">
             <img src={logo} alt="" className="logo_icon" />
             <Link to="/" style={{ textDecoration: 'none' }}> <SidebarOption active Icon={HomeIcon} text="Home" /> </Link>
-            <SidebarOption Icon={SearchIcon} text="Explore" />
+            {/* <SidebarOption Icon={SearchIcon} text="Explore" /> */}
             <Link to="/notice"><SidebarOption Icon={MailOutlineIcon} text="Notices" /></Link>
             <Link to="/courses"> <SidebarOption Icon={ListAltIcon} text="Courses" /></Link>
             <Link to="/schedule"> <SidebarOption Icon={ListAltIcon} text="Schedule" /></Link>
+            <Link to="/login"> <SidebarOption Icon={PermIdentityIcon} text="Login" /></Link>
 
-            <SidebarOption Icon={PermIdentityIcon} text="Profile" />
-            <SidebarOption Icon={MoreHorizIcon} text="More" />
+
+            {/* <SidebarOption Icon={PermIdentityIcon} text="Profile" /> */}
+            {/* <SidebarOption Icon={MoreHorizIcon} text="login" /> */}
 
         </div>
     )
